@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panda & Gorilla Events | Premium Mascot Entertainment — Rahim Yar Khan</title>
+<meta name="description" content="Book premium 2.5-meter Panda & Gorilla mascot performers for restaurant openings, brand promotions, parties & events in Rahim Yar Khan. Instant WhatsApp booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.webp">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --black:#0a0a0a;
+  --charcoal:#151412;
+  --charcoal-2:#1e1c19;
+  --charcoal-3:#28251f;
+  --gold:#d4af37;
+  --gold-bright:#f2cf5b;
+  --gold-deep:#9c7a22;
+  --cream:#f7f4ec;
+  --white:#ffffff;
+  --line:rgba(212,175,55,0.25);
+  --shadow:0 20px 50px rgba(0,0,0,0.45);
+  --radius:18px;
+  --display:'Anton', sans-serif;
+  --body:'Poppins', sans-serif;
+  --wa:#25D366;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--body);
+  background:var(--black);
+  color:var(--cream);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit; cursor:pointer;}
+.container{
+  width:100%;
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 24px;
+}
+@media(max-width:600px){ .container{padding:0 18px;} }
+
+::selection{background:var(--gold); color:var(--black);}
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--gold-bright);
+  outline-offset:3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+}
+
+/* ============ EYEBROW / LABELS ============ */
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:16px;
+}
+.eyebrow::before{
+  content:'';
+  width:26px; height:2px;
+  background:var(--gold);
+  display:inline-block;
+}
+.section-head{
+  max-width:640px;
+  margin:0 0 52px;
+}
+.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head h2{
+  font-family:var(--display);
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.05;
+  font-weight:400;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  color:var(--white);
+}
+.section-head p{
+  margin-top:16px;
+  font-size:16px;
+  line-height:1.7;
+  color:rgba(247,244,236,0.68);
+}
+.section{ padding:96px 0; position:relative; }
+@media(max-width:700px){ .section{ padding:64px 0; } }
+.section.alt{ background:var(--charcoal); }
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-family:var(--body);
+  font-weight:600;
+  font-size:15px;
+  padding:16px 30px;
+  border-radius:100px;
+  border:2px solid transparent;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+  white-space:nowrap;
+}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-bright),var(--gold) 60%,var(--gold-deep));
+  color:var(--black);
+  box-shadow:0 10px 30px rgba(212,175,55,0.28);
+}
+.btn-gold:hover{ transform:translateY(-3px); box-shadow:0 16px 36px rgba(212,175,55,0.4); }
+.btn-outline{
+  border-color:rgba(247,244,236,0.35);
+  color:var(--cream);
+  background:transparent;
+}
+.btn-outline:hover{ border-color:var(--gold); color:var(--gold-bright); transform:translateY(-3px); }
+.btn-wa{
+  background:var(--wa);
+  color:#fff;
+  box-shadow:0 10px 26px rgba(37,211,102,0.32);
+}
+.btn-wa:hover{ transform:translateY(-3px); box-shadow:0 16px 32px rgba(37,211,102,0.45); }
+.btn-block{ width:100%; }
+.btn-sm{ padding:12px 22px; font-size:13.5px; }
+.wa-icon{ width:19px; height:19px; flex-shrink:0; }
+
+/* ============ LOADER (curtain reveal) ============ */
+#loader{
+  position:fixed; inset:0; z-index:9999;
+  background:var(--black);
+  display:flex; align-items:center; justify-content:center;
+}
+#loader .curtain{
+  position:fixed; top:0; bottom:0; width:50%;
+  background:linear-gradient(160deg,#161412,#0a0a0a 70%);
+  z-index:2;
+  transition:transform 1.1s cubic-bezier(.77,0,.18,1);
+}
+#loader .curtain.left{ left:0; border-right:1px solid var(--line); }
+#loader .curtain.right{ right:0; border-left:1px solid var(--line); }
+#loader.open .curtain.left{ transform:translateX(-100%); }
+#loader.open .curtain.right{ transform:translateX(100%); }
+.loader-content{
+  position:relative; z-index:3;
+  display:flex; flex-direction:column; align-items:center; gap:22px;
+  transition:opacity .5s ease;
+}
+#loader.open .loader-content{ opacity:0; }
+.loader-logo{
+  width:120px; height:120px; border-radius:50%;
+  animation:pulseLogo 1.8s ease-in-out infinite;
+  box-shadow:0 0 0 2px var(--line), 0 0 40px rgba(212,175,55,0.25);
+}
+@keyframes pulseLogo{
+  0%,100%{ transform:scale(1); }
+  50%{ transform:scale(1.06); }
+}
+.loader-text{
+  font-family:var(--display);
+  letter-spacing:3px;
+  font-size:14px;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.loader-bar{
+  width:180px; height:2px; background:rgba(212,175,55,0.18);
+  overflow:hidden; border-radius:2px;
+}
+.loader-bar span{
+  display:block; height:100%; width:40%;
+  background:var(--gold);
+  animation:loadSweep 1.1s ease-in-out infinite;
+}
+@keyframes loadSweep{
+  0%{ transform:translateX(-100%); }
+  100%{ transform:translateX(350%); }
+}
+body.no-scroll{ overflow:hidden; height:100%; }
+
+/* ============ HEADER ============ */
+header{
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  padding:18px 0;
+  transition:background .35s ease, padding .35s ease, border-color .35s ease;
+  border-bottom:1px solid transparent;
+}
+header.scrolled{
+  background:rgba(10,10,10,0.88);
+  backdrop-filter:blur(10px);
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+}
+.nav-wrap{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand img{ width:46px; height:46px; border-radius:50%; }
+.brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+.brand-text b{ font-family:var(--display); font-size:16px; letter-spacing:.5px; color:var(--white); text-transform:uppercase; }
+.brand-text span{ font-size:10.5px; letter-spacing:1.5px; color:var(--gold); text-transform:uppercase; }
+.nav-links{ display:flex; align-items:center; gap:34px; }
+.nav-links a{
+  font-size:14px; font-weight:500; color:rgba(247,244,236,0.82);
+  position:relative; padding:4px 0;
+}
+.nav-links a::after{
+  content:''; position:absolute; left:0; bottom:0; height:1.5px; width:0;
+  background:var(--gold); transition:width .25s ease;
+}
+.nav-links a:hover{ color:var(--gold-bright); }
+.nav-links a:hover::after{ width:100%; }
+.mobile-book-btn{ display:none; }
+.nav-cta{ display:flex; align-items:center; gap:14px; }
+.hamburger{ display:none; flex-direction:column; gap:5px; background:none; border:none; padding:6px; }
+.hamburger span{ width:24px; height:2px; background:var(--cream); border-radius:2px; transition:.3s; }
+
+@media(max-width:900px){
+  .nav-links{
+    position:fixed; top:0; right:0; height:100vh; width:min(320px,80vw);
+    background:var(--charcoal); flex-direction:column; align-items:flex-start;
+    padding:100px 30px 30px; gap:26px;
+    transform:translateX(100%); transition:transform .4s ease;
+    border-left:1px solid var(--line);
+    z-index:499;
+  }
+  .nav-links.open{ transform:translateX(0); }
+  .nav-links a{ font-size:17px; }
+  .mobile-book-btn{ display:inline-flex; margin-top:10px; }
+  .hamburger{ display:flex; }
+  .nav-cta .btn-outline{ display:none; }
+  .nav-cta #navWaBtn{ display:none; }
+  .brand-text b{ font-size:14px; }
+  .brand-text span{ font-size:9.5px; }
+}
+@media(max-width:400px){
+  .brand-text{ display:none; }
+}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex; align-items:flex-end;
+  padding-top:110px;
+  padding-bottom:90px;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute; inset:0; z-index:0;
+}
+.hero-bg img{
+  width:100%; height:100%; object-fit:cover; object-position:center 20%;
+}
+.hero-bg::after{
+  content:'';
+  position:absolute; inset:0;
+  background:
+    linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.96) 92%),
+    linear-gradient(90deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0.15) 45%);
+}
+.hero-content{ position:relative; z-index:2; max-width:680px; }
+.hero-content h1{
+  font-family:var(--display);
+  font-size:clamp(40px,7vw,78px);
+  line-height:0.98;
+  text-transform:uppercase;
+  color:var(--white);
+  letter-spacing:.5px;
+}
+.hero-content h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--gold-bright),var(--gold));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero-content p{
+  margin-top:22px; font-size:17px; line-height:1.7;
+  color:rgba(247,244,236,0.82); max-width:520px;
+}
+.hero-actions{ margin-top:36px; display:flex; gap:16px; flex-wrap:wrap; }
+.hero-badge{
+  position:absolute; top:130px; right:6%; z-index:2;
+  background:rgba(10,10,10,0.55); backdrop-filter:blur(8px);
+  border:1px solid var(--line); border-radius:16px;
+  padding:16px 20px; text-align:center;
+  display:flex; flex-direction:column; gap:2px;
+}
+.hero-badge b{ font-family:var(--display); font-size:26px; color:var(--gold-bright); }
+.hero-badge span{ font-size:10.5px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(247,244,236,0.75); }
+@media(max-width:900px){ .hero-badge{ display:none; } }
+
+/* marquee strip */
+.marquee{
+  background:var(--gold); color:var(--black);
+  overflow:hidden; white-space:nowrap; position:relative; z-index:3;
+  border-top:1px solid rgba(0,0,0,0.15); border-bottom:1px solid rgba(0,0,0,0.15);
+}
+.marquee-track{
+  display:inline-flex; gap:40px; padding:12px 0;
+  animation:marquee 26s linear infinite;
+}
+.marquee-track span{ font-family:var(--display); font-size:14px; letter-spacing:2px; text-transform:uppercase; display:inline-flex; align-items:center; gap:40px; }
+@keyframes marquee{ 0%{ transform:translateX(0);} 100%{ transform:translateX(-50%);} }
+
+/* ============ MASCOT PICKER ============ */
+.mascot-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:26px;
+}
+@media(max-width:860px){ .mascot-grid{ grid-template-columns:1fr; max-width:420px; margin:0 auto; } }
+.mascot-card{
+  background:var(--charcoal-2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:30px 26px 26px;
+  text-align:center;
+  cursor:pointer;
+  transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  position:relative;
+  overflow:hidden;
+}
+.mascot-card:hover, .mascot-card.active{
+  transform:translateY(-8px);
+  border-color:var(--gold);
+  box-shadow:0 24px 50px rgba(0,0,0,0.5);
+}
+.mascot-card .tag{
+  position:absolute; top:16px; left:16px;
+  background:var(--gold); color:var(--black);
+  font-size:10.5px; font-weight:700; letter-spacing:1px; text-transform:uppercase;
+  padding:5px 12px; border-radius:100px;
+}
+.mascot-card .img-wrap{
+  height:230px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+}
+.mascot-card .img-wrap img{ max-height:100%; width:auto; margin:0 auto; filter:drop-shadow(0 18px 22px rgba(0,0,0,0.5)); }
+.mascot-card h3{
+  font-family:var(--display); font-size:24px; text-transform:uppercase; letter-spacing:.5px; color:var(--white); margin-bottom:6px;
+}
+.mascot-card p.desc{ font-size:13.5px; color:rgba(247,244,236,0.62); margin-bottom:14px; line-height:1.6; }
+.mascot-card .price-from{ font-size:13px; color:var(--gold); font-weight:600; margin-bottom:18px; }
+.mascot-card .price-from b{ font-size:19px; font-family:var(--body); }
+.select-btn{
+  width:100%; padding:13px; border-radius:100px; border:1.5px solid var(--gold);
+  background:transparent; color:var(--gold-bright); font-weight:600; font-size:14px;
+  transition:.25s;
+}
+.mascot-card:hover .select-btn, .mascot-card.active .select-btn{ background:var(--gold); color:var(--black); }
+
+/* ============ PRICING TICKETS ============ */
+.tabs{ display:flex; justify-content:center; gap:10px; margin-bottom:48px; flex-wrap:wrap; }
+.tab-btn{
+  padding:12px 26px; border-radius:100px; border:1.5px solid var(--line);
+  background:var(--charcoal-2); color:rgba(247,244,236,0.75); font-weight:600; font-size:14px;
+  transition:.25s;
+}
+.tab-btn.active, .tab-btn:hover{ border-color:var(--gold); color:var(--gold-bright); background:var(--charcoal-3); }
+
+.ticket-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:22px;
+}
+@media(max-width:1000px){ .ticket-grid{ grid-template-columns:repeat(2,1fr); } }
+@media(max-width:560px){ .ticket-grid{ grid-template-columns:1fr; } }
+
+.ticket{
+  position:relative;
+  background:var(--charcoal-2);
+  border:1.5px dashed rgba(212,175,55,0.4);
+  border-radius:16px;
+  padding:26px 22px 24px;
+  display:flex; flex-direction:column;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.ticket:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(0,0,0,0.45); }
+.ticket::before, .ticket::after{
+  content:''; position:absolute; width:22px; height:22px; background:var(--black);
+  border-radius:50%; top:50%; transform:translateY(-50%);
+}
+.ticket::before{ left:-11px; }
+.ticket::after{ right:-11px; }
+.ticket.featured{ border-color:var(--gold); background:linear-gradient(160deg,var(--charcoal-3),var(--charcoal-2)); }
+.ticket .ribbon{
+  position:absolute; top:14px; right:14px;
+  background:var(--gold); color:var(--black);
+  font-size:10px; font-weight:800; letter-spacing:.5px;
+  padding:4px 10px; border-radius:100px; text-transform:uppercase;
+}
+.ticket .duration{ font-size:12px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:10px; }
+.ticket .price-row{ margin-bottom:14px; }
+.ticket .original{ font-size:14px; color:rgba(247,244,236,0.45); text-decoration:line-through; }
+.ticket .discounted{ font-family:var(--display); font-size:30px; color:var(--white); line-height:1.2; }
+.ticket .discounted small{ font-family:var(--body); font-size:12px; color:rgba(247,244,236,0.55); font-weight:500; }
+.ticket .custom-price{ font-family:var(--display); font-size:24px; color:var(--gold-bright); margin-bottom:14px; }
+.ticket hr{ border:none; border-top:1px dashed rgba(212,175,55,0.3); margin:14px 0; }
+.ticket ul{ flex:1; margin-bottom:18px; }
+.ticket ul li{
+  font-size:13px; color:rgba(247,244,236,0.72); display:flex; gap:8px; margin-bottom:8px; line-height:1.4;
+}
+.ticket ul li svg{ flex-shrink:0; width:14px; height:14px; margin-top:2px; color:var(--gold); }
+
+.extras-box{
+  margin-top:56px; background:var(--charcoal-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:34px 30px; text-align:center;
+}
+.extras-box h4{ font-family:var(--display); font-size:20px; text-transform:uppercase; letter-spacing:.5px; color:var(--white); margin-bottom:6px; }
+.extras-box p.note{ font-size:13.5px; color:rgba(247,244,236,0.6); margin-bottom:20px; }
+.chip-row{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:24px; }
+.chip{
+  padding:9px 18px; border-radius:100px; border:1px solid var(--line);
+  font-size:13px; color:rgba(247,244,236,0.8); background:var(--black);
+}
+
+/* ============ EVENT TYPES ============ */
+.event-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+}
+@media(max-width:860px){ .event-grid{ grid-template-columns:repeat(2,1fr); } }
+@media(max-width:560px){ .event-grid{ grid-template-columns:1fr; } }
+.event-card{
+  background:var(--charcoal-2); border:1px solid var(--line); border-radius:14px;
+  padding:22px; display:flex; align-items:center; gap:16px;
+  transition:.25s; cursor:pointer;
+}
+.event-card:hover{ border-color:var(--gold); background:var(--charcoal-3); transform:translateX(4px); }
+.event-card .ic{ font-size:26px; }
+.event-card h5{ font-size:15px; font-weight:600; color:var(--white); }
+.event-card span{ font-size:12px; color:rgba(247,244,236,0.55); }
+
+/* ============ HOW IT WORKS ============ */
+.steps{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  position:relative;
+}
+@media(max-width:900px){ .steps{ grid-template-columns:1fr; gap:36px; } }
+.steps::before{
+  content:''; position:absolute; top:34px; left:12%; right:12%; height:1px;
+  background:repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 20px);
+}
+@media(max-width:900px){ .steps::before{ display:none; } }
+.step{ position:relative; padding:0 18px; text-align:center; }
+.step-num{
+  width:68px; height:68px; border-radius:50%; margin:0 auto 20px;
+  background:var(--black); border:1.5px solid var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--display); font-size:24px; color:var(--gold-bright);
+  position:relative; z-index:2;
+}
+.step h4{ font-size:16px; font-weight:600; color:var(--white); margin-bottom:8px; }
+.step p{ font-size:13.5px; color:rgba(247,244,236,0.6); line-height:1.6; }
+
+/* ============ ABOUT ============ */
+.about-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+@media(max-width:860px){ .about-wrap{ grid-template-columns:1fr; gap:34px; } }
+.about-img{ position:relative; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); background:radial-gradient(circle at 50% 40%, rgba(212,175,55,0.14), var(--charcoal-2) 70%); display:flex; align-items:center; justify-content:center; padding:30px; }
+.about-img img{ width:100%; height:100%; object-fit:contain; }
+.about-text p{ font-size:15.5px; line-height:1.85; color:rgba(247,244,236,0.75); margin-bottom:18px; }
+.about-stats{ display:flex; gap:34px; margin-top:28px; flex-wrap:wrap; }
+.about-stats div b{ font-family:var(--display); font-size:30px; color:var(--gold-bright); display:block; }
+.about-stats div span{ font-size:12px; color:rgba(247,244,236,0.55); text-transform:uppercase; letter-spacing:1px; }
+
+/* ============ WHY CHOOSE US ============ */
+.why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+@media(max-width:860px){ .why-grid{ grid-template-columns:repeat(2,1fr); } }
+@media(max-width:560px){ .why-grid{ grid-template-columns:1fr; } }
+.why-card{ text-align:center; padding:34px 22px; border:1px solid var(--line); border-radius:16px; background:var(--charcoal-2); transition:.25s; }
+.why-card:hover{ border-color:var(--gold); transform:translateY(-6px); }
+.why-card .ic{ font-size:32px; margin-bottom:16px; }
+.why-card h5{ font-size:16px; font-weight:600; color:var(--white); margin-bottom:8px; }
+.why-card p{ font-size:13px; color:rgba(247,244,236,0.6); line-height:1.6; }
+
+/* ============ BOOKING FORM ============ */
+.book-wrap{
+  max-width:760px; margin:0 auto;
+  background:var(--charcoal-2); border:1px solid var(--line); border-radius:24px;
+  padding:44px;
+}
+@media(max-width:600px){ .book-wrap{ padding:26px 20px; } }
+.progress{ display:flex; gap:6px; margin-bottom:36px; }
+.progress i{ flex:1; height:4px; border-radius:4px; background:rgba(212,175,55,0.18); }
+.progress i.done{ background:var(--gold); }
+.book-step{ display:none; }
+.book-step.active{ display:block; animation:fadeIn .4s ease; }
+@keyframes fadeIn{ from{ opacity:0; transform:translateY(8px);} to{ opacity:1; transform:translateY(0);} }
+.book-step h3{ font-family:var(--display); font-size:24px; text-transform:uppercase; letter-spacing:.5px; color:var(--white); margin-bottom:22px; }
+.opt-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:8px; }
+@media(max-width:600px){ .opt-grid{ grid-template-columns:1fr 1fr; } }
+.opt-grid.single-col{ grid-template-columns:1fr; }
+.opt-card{
+  border:1.5px solid var(--line); border-radius:12px; padding:16px 12px; text-align:center;
+  cursor:pointer; transition:.2s; background:var(--black); font-size:13.5px; font-weight:500;
+}
+.opt-card .ic{ font-size:22px; display:block; margin-bottom:6px; }
+.opt-card:hover{ border-color:var(--gold); }
+.opt-card.selected{ border-color:var(--gold); background:rgba(212,175,55,0.12); color:var(--gold-bright); }
+.field{ margin-bottom:20px; }
+.field label{ display:block; font-size:13px; font-weight:600; color:rgba(247,244,236,0.75); margin-bottom:8px; text-transform:uppercase; letter-spacing:.5px; }
+.field input, .field select, .field textarea{
+  width:100%; padding:14px 16px; border-radius:10px; border:1.5px solid var(--line);
+  background:var(--black); color:var(--cream); font-family:inherit; font-size:14.5px;
+}
+.field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--gold); outline:none; }
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media(max-width:560px){ .field-row{ grid-template-columns:1fr; } }
+.step-actions{ display:flex; justify-content:space-between; gap:14px; margin-top:30px; }
+.summary-box{ background:var(--black); border:1px dashed var(--line); border-radius:14px; padding:22px; margin-bottom:24px; }
+.summary-box div{ display:flex; justify-content:space-between; font-size:14px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+.summary-box div:last-child{ border-bottom:none; }
+.summary-box span.k{ color:rgba(247,244,236,0.55); }
+.summary-box span.v{ color:var(--white); font-weight:600; text-align:right; }
+.back-link{ background:none; border:none; color:rgba(247,244,236,0.55); font-size:13.5px; display:flex; align-items:center; gap:6px; }
+.back-link:hover{ color:var(--gold-bright); }
+
+/* ============ GALLERY ============ */
+.gallery-full{ display:flex; flex-direction:column; gap:4px; }
+.gallery-item{ position:relative; width:100%; overflow:hidden; }
+.gallery-item img{ width:100%; height:auto; display:block; transition:transform .6s ease; }
+.gallery-item:hover img{ transform:scale(1.03); }
+.gallery-cap{
+  position:absolute; left:0; right:0; bottom:0; padding:40px 6% 26px;
+  background:linear-gradient(0deg, rgba(10,10,10,0.92), transparent);
+}
+.gallery-cap b{ font-family:var(--display); font-size:clamp(20px,3vw,30px); text-transform:uppercase; color:var(--white); letter-spacing:.5px; display:block; }
+.gallery-cap span{ font-size:13px; color:var(--gold-bright); }
+.gallery-more{ text-align:center; padding:30px 20px; font-size:13.5px; color:rgba(247,244,236,0.55); }
+
+/* ============ TESTIMONIALS EMPTY ============ */
+.testimonial-empty{
+  max-width:560px; margin:0 auto; text-align:center;
+  border:1px dashed var(--line); border-radius:20px; padding:54px 30px;
+}
+.testimonial-empty .ic{ font-size:34px; margin-bottom:16px; }
+.testimonial-empty h4{ font-family:var(--display); font-size:20px; text-transform:uppercase; color:var(--white); margin-bottom:10px; letter-spacing:.5px; }
+.testimonial-empty p{ font-size:14px; color:rgba(247,244,236,0.6); line-height:1.7; }
+
+/* ============ FAQ ============ */
+.faq-list{ max-width:760px; margin:0 auto; }
+.faq-item{ border-bottom:1px solid var(--line); }
+.faq-q{
+  width:100%; text-align:left; background:none; border:none; padding:22px 4px;
+  display:flex; justify-content:space-between; align-items:center; gap:20px;
+  font-size:16px; font-weight:600; color:var(--white);
+}
+.faq-q .plus{ font-size:20px; color:var(--gold); transition:transform .3s ease; flex-shrink:0; }
+.faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .35s ease; }
+.faq-item.open .faq-a{ max-height:220px; }
+.faq-a p{ padding:0 4px 22px; font-size:14.5px; line-height:1.75; color:rgba(247,244,236,0.65); }
+
+/* ============ FINAL CTA ============ */
+.final-cta{
+  text-align:center; padding:90px 24px; position:relative; overflow:hidden;
+  background:radial-gradient(circle at 50% 0%, rgba(212,175,55,0.14), transparent 60%), var(--charcoal);
+}
+.final-cta h2{ font-family:var(--display); font-size:clamp(32px,5.5vw,56px); text-transform:uppercase; color:var(--white); margin-bottom:16px; letter-spacing:.5px; }
+.final-cta p{ color:rgba(247,244,236,0.68); font-size:16px; max-width:520px; margin:0 auto 32px; }
+
+/* ============ FOOTER ============ */
+footer{ background:var(--black); border-top:1px solid var(--line); padding:70px 0 26px; }
+.footer-grid{ display:grid; grid-template-columns:1.6fr 1fr 1fr 1.2fr; gap:40px; margin-bottom:50px; }
+@media(max-width:860px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+@media(max-width:560px){ .footer-grid{ grid-template-columns:1fr; } }
+.footer-brand{ display:flex; gap:12px; align-items:center; margin-bottom:16px; }
+.footer-brand img{ width:44px; height:44px; border-radius:50%; }
+.footer-brand b{ font-family:var(--display); font-size:16px; text-transform:uppercase; color:var(--white); display:block; }
+.footer-brand span{ font-size:11px; letter-spacing:1px; color:var(--gold); }
+.footer-col p, .footer-col li{ font-size:13.5px; color:rgba(247,244,236,0.6); line-height:2; }
+.footer-col h6{ font-size:13px; text-transform:uppercase; letter-spacing:1.5px; color:var(--gold); margin-bottom:16px; }
+.footer-col a:hover{ color:var(--gold-bright); }
+.footer-bottom{
+  border-top:1px solid var(--line); padding-top:24px;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;
+  font-size:12.5px; color:rgba(247,244,236,0.45);
+}
+
+/* ============ FLOATING WHATSAPP ============ */
+.wa-float{
+  position:fixed; bottom:24px; right:24px; z-index:400;
+  width:60px; height:60px; border-radius:50%;
+  background:var(--wa); display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,0.45);
+}
+.wa-float svg{ width:30px; height:30px; }
+.wa-float::before{
+  content:''; position:absolute; inset:0; border-radius:50%;
+  border:2px solid var(--wa); animation:pulseWa 2s ease-out infinite;
+}
+@keyframes pulseWa{
+  0%{ transform:scale(1); opacity:.7; }
+  100%{ transform:scale(1.8); opacity:0; }
+}
+@media(max-width:600px){ .wa-float{ width:52px; height:52px; bottom:18px; right:18px; } .wa-float svg{ width:26px; height:26px; } }
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+.reveal.show{ opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body class="no-scroll">
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+  <div class="loader-content">
+    <img src="images/logo.webp" alt="Panda & Gorilla Events" class="loader-logo">
+    <div class="loader-text">Warming Up The Show...</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="#top" class="brand">
+      <img src="images/logo.webp" alt="Panda & Gorilla Events logo">
+      <div class="brand-text">
+        <b>Panda &amp; Gorilla</b>
+        <span>Events</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#mascots">Mascots</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How It Works</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book" class="btn btn-gold btn-sm mobile-book-btn">Book Now</a>
+      <a href="#" id="navWaBtnMobile" target="_blank" rel="noopener" class="btn btn-wa btn-sm mobile-book-btn">
+        <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+        WhatsApp Us
+      </a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#book" class="btn btn-outline btn-sm">Book Now</a>
+      <a id="navWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa btn-sm">
+        <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="images/gallery-launch.webp" alt="Panda and Gorilla mascots dancing at a gold-themed store launch event with confetti and cheering crowd">
+  </div>
+  <div class="hero-badge">
+    <b>2.5M</b>
+    <span>Premium Costumes</span>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Rahim Yar Khan's Premier Mascot Entertainment</div>
+      <h1>Make Every<br>Event <em>Unforgettable.</em></h1>
+      <p>Larger-than-life 2.5-meter Panda &amp; Gorilla performers for restaurant openings, brand promotions, parties and corporate events — professional, energetic, and ready to steal the show.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-gold">Book Your Mascot</a>
+        <a href="#pricing" class="btn btn-outline">View Packages</a>
+      </div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>🐼 PANDA &amp; GORILLA EVENTS &nbsp;★&nbsp; RESTAURANT OPENINGS &nbsp;★&nbsp; BRAND PROMOTIONS &nbsp;★&nbsp; BIRTHDAY PARTIES &nbsp;★&nbsp; CORPORATE EVENTS &nbsp;★&nbsp; 30% LAUNCH DISCOUNT &nbsp;★</span>
+      <span>🐼 PANDA &amp; GORILLA EVENTS &nbsp;★&nbsp; RESTAURANT OPENINGS &nbsp;★&nbsp; BRAND PROMOTIONS &nbsp;★&nbsp; BIRTHDAY PARTIES &nbsp;★&nbsp; CORPORATE EVENTS &nbsp;★&nbsp; 30% LAUNCH DISCOUNT &nbsp;★</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHOOSE MASCOT ============ -->
+<section class="section" id="mascots">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Step 1 — Pick Your Performer</div>
+      <h2>Choose Your Mascot</h2>
+      <p>Every mascot is performed by a trained, professional entertainer inside a premium 2.5-meter costume — pick the character that fits your event.</p>
+    </div>
+    <div class="mascot-grid">
+      <div class="mascot-card reveal" data-mascot="panda">
+        <span class="tag">🐼 Panda</span>
+        <div class="img-wrap"><img src="images/panda.webp" alt="2.5 meter Panda mascot costume, waving"></div>
+        <h3>Panda</h3>
+        <p class="desc">Friendly, huggable and full of charm — perfect for restaurant openings, kids' parties and warm brand moments.</p>
+        <p class="price-from">Starting from <b>PKR 15,400</b>/hour</p>
+        <button class="select-btn">Select Panda</button>
+      </div>
+      <div class="mascot-card reveal" data-mascot="gorilla">
+        <span class="tag">🦍 Gorilla</span>
+        <div class="img-wrap"><img src="images/gorilla.webp" alt="2.5 meter Gorilla mascot costume, roaring"></div>
+        <h3>Gorilla</h3>
+        <p class="desc">Bold, powerful and high-energy — ideal for brand promotions, product launches and stopping foot traffic.</p>
+        <p class="price-from">Starting from <b>PKR 15,400</b>/hour</p>
+        <button class="select-btn">Select Gorilla</button>
+      </div>
+      <div class="mascot-card reveal" data-mascot="both">
+        <span class="tag">🐼🦍 Duo</span>
+        <div class="img-wrap"><img src="images/both.webp" alt="Panda and Gorilla mascot duo together"></div>
+        <h3>Both</h3>
+        <p class="desc">The full show — Panda &amp; Gorilla together for maximum crowd, photos and buzz at your event.</p>
+        <p class="price-from">Starting from <b>PKR 30,800</b>/hour</p>
+        <button class="select-btn">Select Both</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section alt" id="pricing">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Step 2 — Choose Your Package</div>
+      <h2>Simple, Transparent Pricing</h2>
+      <p>Launch offer — 30% OFF all packages for a limited time. Every booking includes a professional performer, full costume, and non-stop entertainment.</p>
+    </div>
+
+    <div class="tabs" id="pricingTabs">
+      <button class="tab-btn active" data-tab="panda">🐼 Panda</button>
+      <button class="tab-btn" data-tab="gorilla">🦍 Gorilla</button>
+      <button class="tab-btn" data-tab="both">🐼🦍 Both</button>
+    </div>
+
+    <div class="ticket-grid" id="ticketGrid"></div>
+
+    <div class="extras-box reveal">
+      <h4>Optional Add-ons</h4>
+      <p class="note">Enhance any package — just mention what you'd like when you message us on WhatsApp.</p>
+      <div class="chip-row">
+        <span class="chip">➕ Extra Performer / Helper</span>
+        <span class="chip">🎵 Custom Entrance &amp; Music</span>
+        <span class="chip">📸 Photo Props</span>
+        <span class="chip">💃 Special Dance Performance</span>
+        <span class="chip">🚗 Travel Outside Rahim Yar Khan</span>
+        <span class="chip">⏱️ Extra Hours</span>
+        <span class="chip">🏷️ Custom Branding / Props</span>
+      </div>
+      <a id="extrasWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa btn-sm">
+        <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+        Ask About Add-ons
+      </a>
+    </div>
+
+    <p style="text-align:center; margin-top:26px; font-size:13px; color:rgba(247,244,236,0.5);">
+      Base pricing applies to all event types. Large-scale events, travel &amp; special requirements are available on custom quotation.
+    </p>
+  </div>
+</section>
+
+<!-- ============ EVENT TYPES ============ -->
+<section class="section" id="events">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Where We Perform</div>
+      <h2>Built For Every Kind Of Event</h2>
+      <p>Tap an event type to jump straight into booking — we'll pre-fill it for you.</p>
+    </div>
+    <div class="event-grid" id="eventGrid">
+      <div class="event-card reveal" data-event="Restaurant Opening"><span class="ic">🍽️</span><div><h5>Restaurant Openings</h5><span>Draw the crowd on day one</span></div></div>
+      <div class="event-card reveal" data-event="Brand Promotion"><span class="ic">📢</span><div><h5>Brand Promotions</h5><span>Stop foot traffic instantly</span></div></div>
+      <div class="event-card reveal" data-event="Birthday Party"><span class="ic">🎂</span><div><h5>Birthday Parties</h5><span>Unforgettable for the kids</span></div></div>
+      <div class="event-card reveal" data-event="Corporate Event"><span class="ic">🏢</span><div><h5>Corporate Events</h5><span>Memorable brand moments</span></div></div>
+      <div class="event-card reveal" data-event="Mall Promotion"><span class="ic">🛍️</span><div><h5>Mall Promotions</h5><span>Big crowds, big engagement</span></div></div>
+      <div class="event-card reveal" data-event="School/College Event"><span class="ic">🎓</span><div><h5>School &amp; College Events</h5><span>Energy for every age</span></div></div>
+      <div class="event-card reveal" data-event="Product Launch"><span class="ic">🚀</span><div><h5>Product Launches</h5><span>Launch day, done right</span></div></div>
+      <div class="event-card reveal" data-event="Wedding/Celebration"><span class="ic">💍</span><div><h5>Weddings &amp; Celebrations</h5><span>A surprise guests remember</span></div></div>
+      <div class="event-card reveal" data-event="Other"><span class="ic">✨</span><div><h5>Other Events</h5><span>Have something unique in mind?</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section alt" id="how">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">The Process</div>
+      <h2>How It Works</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h4>Select Mascot</h4>
+        <p>Choose Panda, Gorilla, or Both for your event.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h4>Select Event</h4>
+        <p>Tell us what you're celebrating or promoting.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h4>Choose Package</h4>
+        <p>Pick your duration — hourly, multi-hour, or full event.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h4>WhatsApp Booking</h4>
+        <p>Send your details and we'll confirm availability.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:44px;">
+      <a href="#book" class="btn btn-gold">Start Booking</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-img reveal">
+        <img src="images/both.webp" alt="Panda and Gorilla mascot performers side by side">
+      </div>
+      <div class="about-text reveal">
+        <div class="eyebrow">About Us</div>
+        <h2 style="font-family:var(--display); font-size:clamp(28px,4vw,40px); text-transform:uppercase; color:var(--white); margin-bottom:20px; line-height:1.1;">Premium Mascots. Real Performers.</h2>
+        <p>Panda &amp; Gorilla Events brings Rahim Yar Khan its first premium 2.5-meter Panda and Gorilla mascot experience. Our professional performers bring these larger-than-life costumes to life with high-energy dancing, genuine crowd interaction, and photo moments guests won't stop talking about.</p>
+        <p>Whether you're launching a new restaurant, promoting your brand at the mall, or celebrating a birthday, we show up on time, in costume, and ready to perform — turning any event into the talk of the town.</p>
+        <div class="about-stats">
+          <div><b>2.5M</b><span>Costume Height</span></div>
+          <div><b>2</b><span>Signature Characters</span></div>
+          <div><b>9+</b><span>Event Types Covered</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section alt" id="why">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Why Choose Us</div>
+      <h2>Entertainment You Can Rely On</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="ic">🎭</div><h5>Professional Performers</h5><p>Trained entertainers who know how to work a crowd, not just wear a costume.</p></div>
+      <div class="why-card reveal"><div class="ic">👑</div><h5>Premium Costumes</h5><p>2.5-meter, high-quality Panda &amp; Gorilla suits built to impress.</p></div>
+      <div class="why-card reveal"><div class="ic">⚡</div><h5>Energetic Entertainment</h5><p>Dancing, interaction and photo moments that keep guests engaged.</p></div>
+      <div class="why-card reveal"><div class="ic">⏰</div><h5>On-Time Service</h5><p>We arrive ready to perform — no delays, no surprises.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING FLOW ============ -->
+<section class="section" id="book">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Reserve Your Date</div>
+      <h2>Book Your Mascot</h2>
+      <p>Fill in a few details and we'll send everything straight to WhatsApp for instant confirmation.</p>
+    </div>
+
+    <div class="book-wrap">
+      <div class="progress">
+        <i class="p-bar" data-step="1"></i><i class="p-bar" data-step="2"></i><i class="p-bar" data-step="3"></i><i class="p-bar" data-step="4"></i><i class="p-bar" data-step="5"></i>
+      </div>
+
+      <!-- STEP 1: MASCOT -->
+      <div class="book-step active" data-step="1">
+        <h3>1. Choose Mascot</h3>
+        <div class="opt-grid" id="bookMascotGrid">
+          <div class="opt-card" data-value="Panda"><span class="ic">🐼</span>Panda</div>
+          <div class="opt-card" data-value="Gorilla"><span class="ic">🦍</span>Gorilla</div>
+          <div class="opt-card" data-value="Both"><span class="ic">🐼🦍</span>Both</div>
+        </div>
+        <div class="step-actions">
+          <span></span>
+          <button class="btn btn-gold" onclick="nextStep(1)">Continue</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: EVENT TYPE -->
+      <div class="book-step" data-step="2">
+        <h3>2. Event Type</h3>
+        <div class="field">
+          <label for="eventTypeSelect">Select Event Type</label>
+          <select id="eventTypeSelect">
+            <option value="Restaurant Opening">🍽️ Restaurant Opening</option>
+            <option value="Brand Promotion">📢 Brand Promotion</option>
+            <option value="Birthday Party">🎂 Birthday Party</option>
+            <option value="Corporate Event">🏢 Corporate Event</option>
+            <option value="Mall Promotion">🛍️ Mall Promotion</option>
+            <option value="School/College Event">🎓 School/College Event</option>
+            <option value="Product Launch">🚀 Product Launch</option>
+            <option value="Wedding/Celebration">💍 Wedding/Celebration</option>
+            <option value="Other">✨ Other</option>
+          </select>
+        </div>
+        <div class="step-actions">
+          <button class="back-link" onclick="prevStep(2)">← Back</button>
+          <button class="btn btn-gold" onclick="nextStep(2)">Continue</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: DATE & DURATION -->
+      <div class="book-step" data-step="3">
+        <h3>3. Date &amp; Duration</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate">
+          </div>
+          <div class="field">
+            <label for="eventTime">Preferred Time</label>
+            <input type="time" id="eventTime">
+          </div>
+        </div>
+        <div class="field">
+          <label for="durationSelect">Duration / Package</label>
+          <select id="durationSelect">
+            <option value="1 Hour">1 Hour</option>
+            <option value="2 Hours">2 Hours</option>
+            <option value="4 Hours">4 Hours</option>
+            <option value="Full Event (Custom Quote)">Full Event (Custom Quote)</option>
+          </select>
+        </div>
+        <div class="step-actions">
+          <button class="back-link" onclick="prevStep(3)">← Back</button>
+          <button class="btn btn-gold" onclick="nextStep(3)">Continue</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: LOCATION -->
+      <div class="book-step" data-step="4">
+        <h3>4. Event Location</h3>
+        <div class="field">
+          <label for="eventLocation">Venue / Address</label>
+          <input type="text" id="eventLocation" placeholder="e.g. Model Town, Rahim Yar Khan">
+        </div>
+        <p style="font-size:13px; color:rgba(247,244,236,0.5); margin-top:-6px; margin-bottom:10px;">Outside Rahim Yar Khan? No problem — available on custom quotation.</p>
+        <div class="step-actions">
+          <button class="back-link" onclick="prevStep(4)">← Back</button>
+          <button class="btn btn-gold" onclick="nextStep(4)">Continue</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: CUSTOMER DETAILS + REVIEW -->
+      <div class="book-step" data-step="5">
+        <h3>5. Your Details</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="custName">Full Name</label>
+            <input type="text" id="custName" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="custPhone">Phone Number</label>
+            <input type="text" id="custPhone" placeholder="03XX-XXXXXXX">
+          </div>
+        </div>
+        <div class="field">
+          <label for="custNotes">Additional Notes (optional)</label>
+          <textarea id="custNotes" rows="3" placeholder="Any extras or special requests?"></textarea>
+        </div>
+
+        <div class="summary-box" id="summaryBox"></div>
+
+        <div class="step-actions">
+          <button class="back-link" onclick="prevStep(5)">← Back</button>
+          <a id="finalWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa">
+            <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+            Send Booking via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="container" style="margin-bottom:52px; padding-top:96px;">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Moments We've Created</div>
+      <h2>Gallery</h2>
+      <p>A glimpse of the energy Panda &amp; Gorilla bring to every event. Real photos from our own bookings coming soon.</p>
+    </div>
+  </div>
+  <div class="gallery-full">
+    <div class="gallery-item reveal">
+      <img src="images/gallery-restaurant.webp" alt="Panda and Gorilla mascots dancing outside a restaurant opening with an opening offer sign and crowd taking photos">
+      <div class="gallery-cap"><b>Restaurant Openings</b><span>Draw the crowd from day one</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="images/gallery-launch.webp" alt="Two Panda and two Gorilla mascots in suits dancing on a red carpet with gold confetti at a store launch event">
+      <div class="gallery-cap"><b>Brand &amp; Store Launches</b><span>An entrance nobody forgets</span></div>
+    </div>
+  </div>
+  <p class="gallery-more">More real event photos will be added here soon.</p>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section alt" id="testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Client Stories</div>
+      <h2>Testimonials</h2>
+    </div>
+    <div class="testimonial-empty reveal">
+      <div class="ic">💬</div>
+      <h4>Coming Soon</h4>
+      <p>We're just getting started — client stories from our bookings will appear here soon. Be one of our first!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Good To Know</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item open">
+        <button class="faq-q">How much does it cost to book a mascot? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Our launch price is PKR 15,400/hour for Panda or Gorilla, and PKR 30,800/hour for Both — that's 30% off our regular PKR 22,000/hour rate. Multi-hour and full-event packages are also available at discounted rates.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I make a booking? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Choose your mascot, event type, date, duration and location using our booking form, then send your details straight to us on WhatsApp — we'll confirm availability and next steps from there.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How far in advance should I book? <span class="plus">+</span></button>
+        <div class="faq-a"><p>We recommend booking at least 2–3 days before your event to guarantee availability for your preferred date and time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Which locations do you cover? <span class="plus">+</span></button>
+        <div class="faq-a"><p>We're primarily based in Rahim Yar Khan and cover nearby cities directly. Other cities across Pakistan are available on custom quotation depending on travel distance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do I need to pay in advance? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes, an advance payment is required to confirm your booking. The remaining balance is due before or on the day of the event.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is your cancellation policy? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Advance payments are non-refundable once a booking is confirmed, except where mutually agreed. Availability is always subject to your selected date and time.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<div class="final-cta">
+  <div class="eyebrow" style="justify-content:center;">Ready When You Are</div>
+  <h2>Let's Make It Unforgettable</h2>
+  <p>Message us on WhatsApp now to check availability for your date.</p>
+  <a id="ctaWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa">
+    <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+    Message Us On WhatsApp
+  </a>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="images/logo.webp" alt="Panda & Gorilla Events logo">
+          <div>
+            <b>Panda &amp; Gorilla</b>
+            <span>EVENTS</span>
+          </div>
+        </div>
+        <p>Premium 2.5-meter Panda &amp; Gorilla mascot entertainment for restaurant openings, brand promotions, parties and events across Rahim Yar Khan.</p>
+      </div>
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="#mascots">Mascots</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Service Area</h6>
+        <p>Primary: Rahim Yar Khan<br>Nearby cities: Available<br>Other cities: Custom quotation based on travel distance</p>
+      </div>
+      <div class="footer-col">
+        <h6>Contact</h6>
+        <p>WhatsApp only —<br><a id="footerWaLink" href="#" target="_blank" rel="noopener">+92 332 7330518</a></p>
+        <a id="footerWaBtn" href="#" target="_blank" rel="noopener" class="btn btn-wa btn-sm" style="margin-top:14px;">
+          <svg class="wa-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+          Chat Now
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Panda &amp; Gorilla Events. Made Every Event Unforgettable.</span>
+      <span>Advance payment required to confirm booking &middot; Non-refundable after confirmation</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a id="floatWaBtn" href="#" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.908 6.47L4 29l7.72-1.868A11.94 11.94 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.8a9.76 9.76 0 01-4.98-1.365l-.357-.212-4.583 1.108 1.127-4.466-.233-.366A9.76 9.76 0 016.2 15c0-5.404 4.397-9.8 9.801-9.8 5.403 0 9.8 4.396 9.8 9.8 0 5.404-4.397 9.8-9.8 9.8zm5.36-7.34c-.294-.147-1.74-.858-2.01-.956-.27-.098-.466-.147-.663.147-.196.294-.76.956-.932 1.152-.171.196-.343.22-.637.073-.294-.147-1.241-.457-2.364-1.457-.874-.78-1.464-1.744-1.635-2.038-.171-.294-.018-.453.129-.6.132-.132.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.024-.514-.073-.147-.663-1.598-.909-2.188-.24-.575-.483-.497-.663-.506-.171-.008-.368-.01-.564-.01-.196 0-.514.073-.784.368-.27.294-1.03 1.006-1.03 2.457 0 1.45 1.055 2.85 1.202 3.046.147.196 2.076 3.17 5.032 4.445.703.303 1.251.484 1.678.62.705.224 1.347.192 1.854.117.566-.084 1.74-.711 1.985-1.398.245-.687.245-1.276.171-1.398-.073-.122-.269-.196-.564-.343z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
